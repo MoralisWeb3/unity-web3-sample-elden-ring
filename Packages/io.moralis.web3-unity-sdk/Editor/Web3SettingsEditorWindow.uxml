@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd"
+>
+	<engine:VisualElement name="View" class="web3-settings-view">
+		<engine:VisualElement name="Title">
+			<engine:VisualElement name="Logo" />
+			<engine:TextElement name="TitleText" class="title_text" text="Web3 Request Settings" />
+		</engine:VisualElement>
+
+		<engine:VisualElement class="container">
+			<engine:VisualElement name="LeftPanel">
+					<!-- page 1 -->
+					<engine:VisualElement name="Page_1" class="page">
+						<engine:Label class="field_label" text="Dapp Name" />
+						<engine:TextField class="text_field" name="DappNameField" />
+
+						<engine:Label class="field_label" text="Dapp Description" />
+						<engine:TextField class="text_field" name="DappDescriptionField" />
+
+						<engine:Label class="field_label" text="Dapp Version" />
+						<engine:TextField class="text_field" name="DappVersionField" />
+
+						<engine:Label class="field_label" text="Dapp Icon URL" />
+						<engine:TextField class="text_field" name="DappIconUrlField" />
+
+						<engine:Label class="field_label" text="Dapp Website URL" />
+						<engine:TextField class="text_field" name="DappWebsiteUrlField" />
+					</engine:VisualElement>
+					<!-- 1 -->
+					<engine:VisualElement class="button_row">
+						<engine:Button name="DoneButton" text="Done" class="button" />
+					</engine:VisualElement>
+			</engine:VisualElement>
+		</engine:VisualElement>
+	</engine:VisualElement>
+
+</engine:UXML>

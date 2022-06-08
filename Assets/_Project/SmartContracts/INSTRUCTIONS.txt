@@ -1,0 +1,67 @@
+//!! Remember that you need to have NodeJS installed: https://nodejs.org/en/download/
+
+// 1. INSTALL HARDHAT
+
+    npm i -D hardhat
+    npx hardhat
+
+// 2. INSTALL DEPENDENCIES
+
+    npm i -D @openzeppelin/contracts
+    npm i -D @nomiclabs/hardhat-waffle
+    npm i -D @nomiclabs/hardhat-etherscan
+
+// 3. UNDER "contracts/", RENAME "Greeter.sol" TO YOUR DESIRED CONTRACT NAME
+
+// 4. UNDER "scripts/" RENAME "sample_script.js" to "deploy{YourContractName}.js" (WITHOUT {} of course)
+
+// 5. ON "deploy{YourContractName}.sol" RENAME ALL THE "Greeter" AND "greeter" FIELDS WITH YOUR CONTRACT NAME. !! PRESERVE ORIGINAL CASE !!
+
+// 6. MAKE SURE the "deploy()" function has the correct contract constructor parameters
+
+// 7. UNDER "scripts/" MODIFY "deploy{YourContractName}.js" WITH YOUR NEEDS. FOR EXAMPLE, WE ADD ETHERSCAN VERIFICATION CODE JUST AFTER:
+
+    await yourContractName.deployTransaction.wait(5);
+    
+    // We verify the contract
+    await hre.run("verify:verify", {
+        address: yourContractName.address,
+        constructorArguments: [],
+    });
+
+// 8. ON "hardhat.config.js" ADD THIS REQUIRE TO THE TOP:
+
+    require("@nomiclabs/hardhat-etherscan");
+        
+// 9. ON "hardhat.config.js" ADD THESE FIELDS AFTER "module.exports" part:
+
+    const PRIVATE_KEY = "";
+    const MUMBAI_NETWORK_URL = "";
+    const POLYGONSCAN_API_KEY = "";
+
+// 10. MODIFY "module.exports" in "hardat.config.js" WITH YOUR NEEDS, LIKE THIS:
+
+    module.exports = {
+      solidity: "0.8.7",
+      networks: {
+        mumbai: {
+          url: MUMBAI_NETWORK_URL,
+          accounts: [PRIVATE_KEY]
+        }
+      },
+      etherscan: {
+        apiKey: POLYGONSCAN_API_KEY 
+      }
+    };
+
+// 11. COMPILE SMART CONTRACT
+
+    npx hardhat clean
+    npx hardhat compile
+
+// 13. RUN "scripts/deploy{YourContractName}.js" TO DEPLOY SMART CONTRACT
+
+    npx hardhat run scripts/deploy{YourContractName}.js --network mumbai
+
+************* CONTRACT DEPLOYED AND VERIFIED *************
+
