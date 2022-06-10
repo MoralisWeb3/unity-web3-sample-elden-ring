@@ -33,7 +33,7 @@
 
     require("@nomiclabs/hardhat-etherscan");
         
-// 9. ON "hardhat.config.js" ADD THESE FIELDS AFTER "module.exports" part:
+// 9. ON "hardhat.config.js" ADD THESE FIELDS BEFORE "module.exports" part:
 
     const PRIVATE_KEY = "";
     const MUMBAI_NETWORK_URL = "";
