@@ -43,6 +43,13 @@ namespace Web3_Elden_Ring
                 
                 foreach (var nftOwner in nftOwners)
                 {
+                    if (nftOwner.Metadata == null)
+                    {
+                        // TODO Sometimes GetNFTsForContract fails to get NFT Metadata. I'm checking this with SDK team
+                        Debug.Log("We couldn't get NFT Metadata");
+                        continue;
+                    }
+                    
                     var metadata = nftOwner.Metadata;
                     MetadataObject metadataObject = JsonUtility.FromJson<MetadataObject>(metadata);
 
