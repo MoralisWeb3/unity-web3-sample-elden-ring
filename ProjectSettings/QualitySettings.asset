@@ -79,7 +79,11 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 11400000, guid: e1260c1148f6143b28bae5ace5e9c5d1,
       type: 2}
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - WebGL
+    - Server
+    - Windows Store Apps
   - serializedVersion: 2
     name: High Fidelity
     pixelLightCount: 2
@@ -120,7 +124,6 @@ QualitySettings:
     - Standalone
     - Server
     - WebGL
-    - Windows Store Apps
   m_PerPlatformDefaultQuality:
     Android: 1
     CloudRendering: 2
