@@ -45,8 +45,9 @@ namespace Web3_Elden_Ring
                 {
                     if (nftOwner.Metadata == null)
                     {
-                        // TODO Sometimes GetNFTsForContract fails to get NFT Metadata. I'm checking this with SDK team
-                        Debug.Log("We couldn't get NFT Metadata");
+                        // Sometimes GetNFTsForContract fails to get NFT Metadata. We need to re-sync
+                        Moralis.GetClient().Web3Api.Token.ReSyncMetadata(nftOwner.TokenAddress, nftOwner.TokenId, contractChain);
+                        Debug.Log("We couldn't get NFT Metadata. Re-syncing...");
                         continue;
                     }
                     
