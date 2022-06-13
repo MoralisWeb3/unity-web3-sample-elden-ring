@@ -207,7 +207,7 @@
                 {
                     "name": "",
                     "id": "9f973413-5e27-4239-acee-38c4a63feeba",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -251,7 +251,7 @@
                 {
                     "name": "",
                     "id": "fb9fbffb-43d4-4db9-98a0-d68ed47fecd4",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<XInputController>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -266,6 +266,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac146d48-e04d-4e6a-93c8-25fb5971d292",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Roll",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -297,6 +308,17 @@
                     "action": "OpenMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45b9345c-f7f4-4959-88ce-422959e3c59a",
+                    "path": "<XInputController>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "OpenMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -322,6 +344,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
+                    "action": "CloseMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "668a4e6b-7f0c-4007-a780-1c3edf792ead",
+                    "path": "<XInputController>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "CloseMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -374,6 +407,17 @@
                 },
                 {
                     "name": "",
+                    "id": "d15bc314-79e1-47e4-87c5-34e8fecfe827",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "PickUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a192e593-f139-4da5-ad16-796ff9a298e7",
                     "path": "<Keyboard>/m",
                     "interactions": "",
@@ -385,11 +429,33 @@
                 },
                 {
                     "name": "",
+                    "id": "10f8b305-7946-4dae-beb2-aa436ec848bb",
+                    "path": "<XInputController>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "OpenMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1b04ce4c-b209-4a97-ac12-927705423900",
                     "path": "<Keyboard>/t",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
+                    "action": "Thriller",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "51976f7b-4f35-4389-87a4-e8af298bdbe0",
+                    "path": "<XInputController>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Thriller",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -418,6 +484,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36d18cd2-2218-4528-bdfb-e847999c9aa7",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
